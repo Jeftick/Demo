@@ -1,0 +1,114 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.rainbow-text {
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 3em;
+  animation: rainbow 3s linear infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.image-container li {
+  list-style: none;
+  margin: 10px;
+}
+
+.image-container img {
+  width: 200px;
+  height: auto;
+  border: 2px solid #ccc;
+  transition: transform 0.2s ease-in-out;
+}
+
+.image-container img:hover {
+  transform: scale(1.1);
+}
+
+.links {
+  margin-bottom: 20px;
+}
+
+.links a {
+  display: block;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: #333;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.table-container {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th, 
+.table-container td {
+  padding: 5px;
+  text-align: left;
+}
+
+.red-text-shadow {
+  font-size: 2em;
+  color: red;
+  text-shadow: 2px 2px 4px black;
+  margin-bottom: 10px;
+}
+
+.box {
+  width: 200px;
+  height: 100px;
+  background-color: #ddd;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  margin-bottom: 20px;
+}
+
+.content p {
+  margin-bottom: 10px;
+}
+
+video {
+  width: 100%;
+}
+
+.links a:hover {
+  color: #1F9AFE;
+}
